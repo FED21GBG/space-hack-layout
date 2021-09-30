@@ -1,0 +1,102 @@
+body {
+    margin: 0;
+    background-color: #2E2D31;
+}
+
+header {
+    display: grid;
+    grid-template-areas: 'bigboxtext bigboxtext planet helmet'
+                        'bigboxtext bigboxtext lasergun rocket';
+    grid-template-columns: 25vw 25vw 25vw 25vw;
+    grid-template-rows: 50vh 50vh;
+}
+header section, main section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    color: white;
+}
+header img, main img {
+    margin-top: 3rem;
+    max-width: 100%;
+}
+.big-box-text {
+    background-color: #2E2D31;
+    grid-area: bigboxtext;
+}
+
+.big-box-text h3 {
+    margin-block-start: 0;
+    margin-block-end: 0;
+}
+
+.planet-box {
+    background-color: #5D44AB;
+    grid-area: planet;
+}
+.helmet-box {
+    background-color: #7654B4;
+    grid-area: helmet;
+}
+.lasergun-box {
+    background-color: #967ECB;
+    grid-area: lasergun;
+}
+.rocket-box {
+    background-color: #513779;
+    grid-area: rocket;
+}
+
+main {
+    display: grid;
+    grid-template-areas: 'astronaut astronaut astronaut astronaut'
+                         'astronaut astronaut astronaut astronaut'
+                         'satellite planets constellation constellation'
+                         'mediumb mediumb constellation constellation';
+    grid-template-columns: repeat(4, 25vw);
+    grid-template-rows: repeat(4, 50vh);
+}
+
+.astronaut {
+    grid-area: astronaut;
+    background: linear-gradient(0deg, rgba(71, 4, 116, 0.5), rgba(71, 4, 116, 0.5)), url(https://images.unsplash.com/photo-1503751071777-d2918b21bbd9?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1740&q=80);
+}
+.satellite-box {
+    background-color: #7654B4;
+    grid-area: satellite;
+}
+.planets-box {
+    background-color: #5D44AB;
+    grid-area: planets;
+}
+.medium-text-box {
+    grid-area: mediumb;
+    background-color: #513779;
+}
+.constellation-box {
+    grid-area: constellation;
+    background-color: #2E2D31;
+}
+
+footer {
+    background-color: #654C8C;
+    padding: 10rem 20rem 10rem 5rem;
+}
+
+footer h1 {
+    margin-block-start: 0;
+    margin-block-end: 0;
+}
+
+footer ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    list-style-type: none;
+    padding-inline-start: 0;
+}
+
+footer ul li {
+    max-width: 8rem;
+}
